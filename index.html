@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <title>My first project</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 <body>
-    <h1>Welcome My Site</h1>
-    <p>This is Manoj- It my first project in DevOps</p>
+
+    <header>
+        <h1>Home Page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="home.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About This Site</h2>
+        <p>This is the home/about page.</p>
+        <button onclick="goBack()">Back to Index</button>
+    </main>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+
 </body>
 </html>
